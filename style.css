@@ -1,6 +1,6 @@
 body {
   background: #fff;
-  color: #3a225a; /* deep purple for text */
+  color: #2563a6; /* light blue for text */
   font-family: 'Segoe UI', Arial, sans-serif;
   line-height: 1.7;
   padding: 0;
@@ -9,7 +9,7 @@ body {
   font-size: 16px;
 }
 .article-container {
-  background: #faf6ff; /* very light purple */
+  background: #f3faff; /* very light blue */
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(120, 80, 180, 0.07);
   max-width: 900px;
@@ -18,10 +18,13 @@ body {
   width: 95%;
   box-sizing: border-box;
 }
+h1, h2, h3, h4, h5, h6 {
+  color: #2563a6; /* light blue accent */
+}
 h1 {
   font-size: 2.3em;
   margin-bottom: 0.5em;
-  color: #7c3aed; /* light purple accent */
+  color: #2563a6; /* light blue accent */
   font-weight: 700;
   letter-spacing: -1px;
   text-align: center;
@@ -30,19 +33,18 @@ h2 {
   font-size: 1.5em;
   margin-top: 2.2em;
   margin-bottom: 0.7em;
-  color: #7c3aed; /* light purple accent */
+  color: #2563a6; /* light blue accent */
   border-left: 5px solid #b3e0ff;
-  padding-left: 12px;
-  font-weight: 600;
   background: #f3faff;
   border-radius: 6px;
   display: inline-block;
+  padding-left: 12px;
 }
 h3 {
   font-size: 1.15em;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
-  color: #7c3aed; /* light purple accent */
+  color: #2563a6; /* light blue accent */
   font-weight: 500;
 }
 p {
@@ -60,21 +62,32 @@ li {
   margin-bottom: 0.5em;
 }
 strong {
-  color: #7c3aed; /* light purple accent */
+  color: #2563a6; /* light blue accent */
+}
+a {
+  color: #2563a6;
+  text-decoration: none;
+  margin-right: 0.5em;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+a:hover, a:focus {
+  color: #174e85;
 }
 video, img {
   display: block;
   margin: 2.5em auto 2em auto;
   max-width: 98%;
-  border-radius: 14px;
+  border-radius: 8px;
+  border: 1px solid #e3f0fc;
   box-shadow: 0 2px 16px 0 rgba(60, 120, 180, 0.10);
   background: #f3faff;
-  border: 1.5px solid #ede9fe;
 }
 .author-box {
   margin-top: 2.5em;
   margin-bottom: 2em;
-  background: #faf6ff;
+  border-top: 2px solid #b3e0ff;
+  background: #f3faff;
   border: 1.5px solid #e3f0fc;
   border-radius: 14px;
   box-shadow: 0 2px 16px 0 rgba(60, 120, 180, 0.08);
@@ -94,24 +107,32 @@ video, img {
   width: 64px;
   height: 64px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #e9d5ff 0%, #7c3aed 100%);
+  background: linear-gradient(135deg, #b3e0ff 0%, #2563a6 100%);
   display: inline-block;
   margin-right: 0.5em;
-  box-shadow: 0 2px 8px 0 rgba(124, 58, 237, 0.10);
-  background-image: url('https://ui-avatars.com/api/?name=Nana+Yaw+Obeng&background=7c3aed&color=fff&size=128');
+  box-shadow: 0 2px 8px 0 rgba(60, 120, 180, 0.10);
+  background-image: url('https://ui-avatars.com/api/?name=Nana+Yaw+Obeng&background=2563a6&color=fff&size=128');
   background-size: cover;
   background-position: center;
 }
 .author-info a {
-  color: #a084e8; /* soft purple */
+  color: #2563a6;
   text-decoration: none;
   margin-right: 0.5em;
   font-weight: 500;
   transition: color 0.2s;
 }
 .author-info a:hover {
-  color: #7c3aed; /* stronger purple on hover */
-  text-decoration: underline;
+  color: #174e85;
+}
+.author-info strong {
+  color: #2563a6;
+}
+.author-info p[style*="color"] {
+  color: #2563a6 !important;
+}
+table th, table td:first-child {
+  color: #2563a6;
 }
 @media (max-width: 900px) {
   .article-container {
@@ -237,9 +258,9 @@ h2:not(:first-child) {
 
 .faq-question {
   width: 100%;
-  background: #ede9fe; /* light purple */
-  color: #7c3aed;
-  border: 1px solid #d1c4e9;
+  background: #e3f0fc; /* light blue */
+  color: #2563a6;
+  border: 1px solid #b3e0ff;
   border-radius: 6px;
   outline: none;
   text-align: left;
@@ -253,13 +274,13 @@ h2:not(:first-child) {
 }
 
 .faq-question:hover, .faq-question:focus {
-  background: #d1c4e9;
-  color: #3a225a;
+  background: #b3e0ff;
+  color: #174e85;
 }
 
 .faq-item.open .faq-question {
-  background: #c4b5fd;
-  color: #3a225a;
+  background: #b3e0ff;
+  color: #174e85;
 }
 
 .faq-answer {
@@ -290,3 +311,4 @@ h2:not(:first-child) {
 .faq-section, .author-box {
   margin-bottom: 1.5em;
 }
+
